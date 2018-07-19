@@ -3,8 +3,24 @@
     <head>
         <title>add-entry|my-diary</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="/UI/css/add-entry.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
     </head>
     <body>
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="entry.html">Entries</a></li>
+            <li><a href="user-profile.html">Your Profile</a></li>
+            <li class="navbar-right"><a href="/my-diary/index.html">LOG OUT</a></li>
+        </ul>
+        <p id ="confidant"><b>A confidant like no other...</b></p>
+        <div class="form" style="margin-top: 5%;">
+            <form >
+                <textarea id="title" placeholder="Title of your entry"></textarea>
+                <textarea id="text" placeholder="Write your thoughts here..."></textarea>
+            </form>
+            <form action="#">
+                <button type='submit'>Save</button>
+            </form>
+        </div>
     </body>
 </html>

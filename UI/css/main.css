@@ -12,8 +12,12 @@ form{
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-
 }
+
+form #text{
+  margin-top: 3%;
+}
+
 .form{
   margin-left: auto;
   margin-right: auto;
@@ -36,7 +40,18 @@ form{
   margin-left: auto;
 }
 
-li a{
+#column{
+  padding: 5px;
+  width: 60%;
+  height: 40%;
+  margin-top: 3%
+}
+
+#row{
+  display: inline;
+}
+
+li {
   text-decoration: none;
   padding: 8px 16px;
   color: #f0e6ff
@@ -50,6 +65,31 @@ input {
   padding:10px;
   width: 100%;
   border:1px solid #CCC
+}
+
+.profile{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-size: 10px
+}
+
+#text{
+  height: 250px;
+  width: 500px;
+}
+
+#confidant{
+  font-size: 30px;
+  text-align: center;
+}
+
+#add-btn{
+  display: inline;
+  text-align: center;
+  padding: 20px;
+  margin-right: 20px;
 }
 
 button {
@@ -87,16 +127,6 @@ nav li {
 
 .login-btn a {
   float: right;
-}
-
-.over {
-	display:flex;
-	flex-wrap:wrap;
-	justify-content: center;
-}
-
-.dear {
-	padding:20px;
 }
 
 p {

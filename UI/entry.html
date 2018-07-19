@@ -3,8 +3,47 @@
     <head>
         <title>entry|my-diary</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="/UI/css/entry.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
     </head>
     <body>
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="entry.html">Entries</a></li>
+            <li><a href="user-profile.html">Your Profile</a></li>
+            <li class="navbar-right"><a href="/my-diary/index.html">LOG OUT</a></li>
+        </ul>
+        <div >
+            <p id ="add-btn" style="font-size: 20px"><b>Put that memory down before u forget it..</b></p>
+            <form id ="add-btn" action="add-entry.html">
+                <button type='submit' style="background-color: rgba(226, 60, 87, 0.753)">Add entry</button>
+            </form>
+        </div>
+        <div id="row">
+            <div class="form" id="column">
+                <form >
+                    <dl>
+                        <dt>entry1</dt>
+                        <dd>content1</dd>
+                        <dt>entry2</dt>
+                        <dd>content2</dd>
+                        <dt>entry3</dt>
+                        <dd>content3</dd>
+                        <dt>entry4</dt>
+                        <dd>content4</dd>
+                        <dt>entry5</dt>
+                        <dd>content5</dd>
+                    </dl>
+                </form>
+            </div>
+            <div class ="form" id="column">
+                <form>
+                    <p id="entry-id" href= "#">entry1</p>
+                    <p id="content-id" href= "#">content1</p>
+                </form>
+                <form action="#">
+                    <button type='submit'>Edit entry</button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
