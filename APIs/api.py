@@ -1,4 +1,4 @@
-from flask import Flask, render_template,jsonify
+from flask import Flask, render_template,jsonify,request
 app = Flask(__name__)
 
 entries = [
@@ -12,7 +12,7 @@ def entry():
     return jsonify({"entries":abc})
 
 @app.route("/entries/<string:entryId>")
-def ttt(entryId):
+def single(entryId):
     for x in entries:
         for a,b in x.iteritems():
             if a == entryId:
