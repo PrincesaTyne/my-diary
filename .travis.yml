@@ -1,22 +1,22 @@
 language: python
 
 python:
-  - "2.7"
   - "3.5"
 
 cache: pip
 
-# command to install dependencies
 install:
   - pip install -r requirements.txt
   - pip install coverage
+  - pip install nose
+  - pip install coveralls
+
 
 virtualenv:
   system_site_packages: true
 
-# command to run tests
 script:
-  - pytest # or py.test for Python versions 3.5 and below
+  - pytest 
 
 after_success:
   -coveralls
