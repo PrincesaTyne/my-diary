@@ -1,0 +1,9 @@
+apis/conftest.py
+apis/diff.py
+apis/Pipfile
+apis/__pycache__
+apis/.pytest_cache
+
+apis/tests/__pycache__
+apis/tests/conftest.py
+apis/tests/.pytest_cache
