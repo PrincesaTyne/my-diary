@@ -6,5 +6,6 @@ app = Flask(__name__)
 def index():
 	return "OK!"
 
+
 if __name__ == "__main__":
 	app.run()
