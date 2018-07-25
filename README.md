@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿# my-diary
+=======
+my-diary
+>>>>>>> 2ff2101083fc8339c16a17bf158c407509000413
 An on-line journal where users can pen down their thoughts and feelings.
 
 https://princesatyne.github.io/my-diary/
@@ -20,6 +24,7 @@ HTTP Method
 Endpoint
 Functionality
 GET
+<<<<<<< HEAD
 api/v1/entries/entryId
 Fetch all entries
 GET
@@ -28,6 +33,16 @@ Fetch a single entry
 POST
 api/v1/entries
 Create a single entry
+=======
+api/v1/entries
+Fetch all entries
+GET
+api/v1/entries/entryId
+Fetch a single entry
+POST
+api/v1/entries
+Create an entry
+>>>>>>> 2ff2101083fc8339c16a17bf158c407509000413
 PUT
 api/v1/entries/entryId
 Modify an entry
@@ -39,4 +54,8 @@ Remove an entry
 Requirements
 Python 3+, pip, virtual environment
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 2ff2101083fc8339c16a17bf158c407509000413
