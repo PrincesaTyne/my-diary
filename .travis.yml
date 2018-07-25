@@ -11,10 +11,6 @@ install:
   - pip install nose
   - pip install coveralls
 
-
-virtualenv:
-  system_site_packages: true
-
 script:
   - pytest 
 
