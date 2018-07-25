@@ -7,3 +7,5 @@ apis/.pytest_cache
 apis/tests/__pycache__
 apis/tests/conftest.py
 apis/tests/.pytest_cache
+apis/tests/base.py
+apis/tests/test_app.py
