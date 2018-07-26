@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/PrincesaTyne/my-diary.svg?branch=api)](https://travis-ci.org/PrincesaTyne/my-diary)
+
 my-diary
 
 An on-line journal where users can pen down their thoughts and feelings.
