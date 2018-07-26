@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/PrincesaTyne/my-diary.svg?branch=api)](https://travis-ci.org/PrincesaTyne/my-diary)
-[![Coverage Status](https://coveralls.io/repos/github/PrincesaTyne/my-diary/badge.svg?branch=master)](https://coveralls.io/github/PrincesaTyne/my-diary?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/PrincesaTyne/my-diary/badge.svg?branch=api)](https://coveralls.io/github/PrincesaTyne/my-diary?branch=api)
 
-## H2 my-diary
+## my-diary
 
 An on-line journal where users can pen down their thoughts and feelings.
 
