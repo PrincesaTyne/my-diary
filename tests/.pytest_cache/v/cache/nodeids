@@ -1,6 +1,3 @@
 [
-  "test_now.py::TestEntries::test_add_entry",
-  "test_now.py::TestEntries::test_edit_entry",
-  "test_now.py::TestEntries::test_get_all_entries",
-  "test_now.py::TestEntries::test_get_single_entry"
+  "test_now.py::TestEntries::test_get_all_entries"
 ]

@@ -25,17 +25,18 @@ class TestEntries(unittest.TestCase):
         response = self.client.get('/api/v1/entries')
         #self.assertIn("entries", response.data.decode())
         self.assertEqual(response.status_code, 200)
-        #response = get_all_entries()
-        #assert response.status_code == 200
     
-    def test_get_single_entry(self, entryId):
-        response = self.client.get("/api/v1/entries/{}".format())
+    # def test_get_single_entry(self, entryId):
+    #         self.client.post("/api/v1/entries",
+    #                 data = json.dumps({'title':'sd','content':'wert','id':'4','date':'89'}),
+    #                 content_type = 'application/json')
+    #     response = self.client.get("/api/v1/entries/{}".format())
     
-    def test_add_entry(self):
-        response = self.client.get("/api/v1/entries")
+    # def test_add_entry(self):
+    #     response = self.client.get("/api/v1/entries")
     
-    def test_edit_entry(self):
-        response = self.client.get("/api/v1/entries/{}".format())
+    # def test_edit_entry(self):
+    #     response = self.client.get("/api/v1/entries/{}".format())
 
     
     if __name__ == '__main__':
