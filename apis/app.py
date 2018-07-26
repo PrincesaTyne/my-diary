@@ -1,8 +1,6 @@
 from flask import Flask, jsonify, request
 import json
 
-app = Flask(__name__)
-
 entries = []
 
 @app.route("/api/v1/entries", methods=["GET"])
