@@ -58,4 +58,4 @@ def edit_entry(entryId):
                 edited_entry = request.get_json()
                 x["content"] = edited_entry["content"]
                 x["title"] = edited_entry["title"]
-    return jsonify ({"Your edited entry": x}),200
+        return jsonify ({"Your edited entry": x}),200

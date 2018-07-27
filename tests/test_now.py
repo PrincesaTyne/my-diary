@@ -23,6 +23,11 @@ null_entry = {'title':'',
         'id':'4',
         'date':'1/1/2000'}
 
+edited_data = {'title':'work',
+            'content':'edited',
+            'id':'4',
+            'date':'1/1/2000'}
+
 class TestEntries(unittest.TestCase):
     def setUp(self):
         """Runs prior to each test and setups any state specific to
@@ -118,6 +123,17 @@ class TestEntries(unittest.TestCase):
                         content_type = 'application/json')
         self.assertEqual(response.status_code, 201)
         self.assertIn(b'went to work yesterday',response.data)
+    
+    def test_edit_entry_valid(self):
+        self.client.post("/api/v1/entries",
+                        data = json.dumps(dummy),
+                        content_type = 'application/json')
+        response = self.client.put("/api/v1/entries/4",
+                                    data = json.dumps(edited_data),
+                                    content_type = 'application/json')                
+        self.assertEqual(response.status_code, 200)
+        # print(response)
+        # self.assertIn(b'went to work yesterday',response.data)
 
     
     if __name__ == '__main__':
