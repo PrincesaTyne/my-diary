@@ -58,8 +58,3 @@ def edit_entry(entryId):
                 x["content"] = request.get_json(entryId)
                 x["id"] == x["content"]
     return jsonify ({"your entries": entries}),200
-
-
-
-if __name__ == "__main__":
-    app.run(debug= True, port=3000)
