@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/PrincesaTyne/my-diary.svg?branch=api)](https://travis-ci.org/PrincesaTyne/my-diary)
-[![Coverage Status](https://coveralls.io/repos/github/PrincesaTyne/my-diary/badge.svg?branch=api)](https://coveralls.io/github/PrincesaTyne/my-diary?branch=api)
+[![Coverage Status](https://coveralls.io/repos/github/PrincesaTyne/my-diary/badge.svg?branch=master)](https://coveralls.io/github/PrincesaTyne/my-diary?branch=master)
 
 ## my-diary
 

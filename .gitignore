@@ -9,3 +9,10 @@ apis/tests/conftest.py
 apis/tests/.pytest_cache
 apis/tests/base.py
 apis/tests/test_app.py
+.coverage
+tests/__pycache__/test_now.cpython-35-PYTEST.pyc
+tests/.pytest_cache/v/cache/nodeids
+tests/.pytest_cache/v/cache/lastfailed
+.pytest_cache/v/cache/nodeids
+tests/.pytest_cache/v/cache/lastfailed
+.vscode/settings.json

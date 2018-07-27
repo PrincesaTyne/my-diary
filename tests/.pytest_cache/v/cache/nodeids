@@ -1,3 +1,4 @@
 [
+  "test_now.py::TestEntries::test_empty_entry",
   "test_now.py::TestEntries::test_get_all_entries"
 ]

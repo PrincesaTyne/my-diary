@@ -14,6 +14,7 @@
   "test_app.py::TestEntries::test_remove_entry": true,
   "test_base.py": true,
   "test_now.py::TestEntries::test_edit_entry": true,
+  "test_now.py::TestEntries::test_empty_entry": true,
   "test_now.py::TestEntries::test_get_single_entry": true,
   "test_now.py::TestEntries::test_remove_entry": true,
   "test_rest.py": true,
