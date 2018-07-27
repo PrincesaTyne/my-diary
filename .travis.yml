@@ -15,4 +15,4 @@ script:
   - nosetests -v --with-coverage --cover-package=apis
 
 after_success:
-  -coveralls
+  - coveralls
