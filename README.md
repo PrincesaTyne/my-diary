@@ -56,28 +56,36 @@ Python 3+, pip, virtual environment
 **Installation**
 
 Make a directory on your computer
-
+```
 $ mkdir my-diary
+```
 
 Initialize the directory
-
+```
 $ git init
+```
 
 Clone the project repository
 
 $ git clone https://github.com/PrincesaTyne/my-diary.git
 
 Create a virtual environment
+```
 
 $ pip install pipenv
+```
 
 Activate the virtual environment
+```
 
 $ pipenv shell
+```
 
 Run the development server
+```
 
 $ python run.py
+```
 
 The site is hosted at http://localhost:5000/
 
@@ -85,9 +93,13 @@ The site is hosted at http://localhost:5000/
 **Run Tests**
 
 Install pytest
+```
 
 $ pip install pytest
+```
 
 Runs the tests
+```
 
 $ pytest
+```
