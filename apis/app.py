@@ -55,6 +55,6 @@ def edit_entry(entryId):
     else:
         for x in entries:
             if x["id"] == entryId:
-                x["content"] = request.get_json(entryId)
-                x["id"] == x["content"]
+                edited_entry = request.get_json()
+                x["content"] = edited_entry[0]["content"]
     return jsonify ({"your entries": entries}),200
