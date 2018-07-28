@@ -13,7 +13,7 @@ def get_all_entries():
     else:
         return jsonify(entries),200
 
-@app.route("/api/v1/entries/<string:entryId>", methods=["GET"])
+@app.route("/api/v1/entries/<int:entryId>", methods=["GET"])
 def get_single_entry(entryId):
     """ Retrieves specified entry from the list of entries"""
     if entries == []:
@@ -21,7 +21,7 @@ def get_single_entry(entryId):
     else:
         for x in entries:
             if x["id"] == entryId:
-                return jsonify(x),200
+                return jsonify({"You have retrieved":x}),200
 
 @app.route('/api/v1/entries', methods=['POST'])
 def add_entry():

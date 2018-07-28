@@ -71,23 +71,6 @@ class TestEntries(unittest.TestCase):
         response = self.client.get("/api/v1/entries/4")
         self.assertEqual(response.status_code, 200)
     
-    def test_edit_empty_entry(self):
-        """ Tests edit_entry when entries list is empty. """
-        response = self.client.put('/api/v1/entries/4')
-        self.assertEqual(response.status_code, 200)
-        self.assertIn(b"There are no entries in your diary", response.data)
-
-    def test_edit_entry(self):
-        """ Tests edit_entry success. """
-        self.client.post("/api/v1/entries",
-                        data = json.dumps(dummy),
-                        content_type = 'application/json')
-        response = self.client.put("/api/v1/entries/4",
-                                    data = json.dumps(edited_data),
-                                    content_type = 'application/json')                
-        self.assertEqual(response.status_code, 200)
-
-    
     def test_add_entry_valid_inputs(self):
         """ Tests add_entry when key inputs are invalid. """
         self.client.post("/api/v1/entries",
@@ -126,12 +109,26 @@ class TestEntries(unittest.TestCase):
         self.assertEqual(response.status_code, 201)
         self.assertIn(b'went to work yesterday',response.data)
     
-        
+    def test_edit_empty_entry(self):
+        """ Tests edit_entry when entries list is empty. """
+        response = self.client.put('/api/v1/entries/4')
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"There are no entries in your diary", response.data)
+
+    def test_edit_entry(self):
+        """ Tests edit_entry success. """
+        self.client.post("/api/v1/entries",
+                        data = json.dumps(dummy),
+                        content_type = 'application/json')
+        response = self.client.put("/api/v1/entries/4",
+                                    data = json.dumps(edited_data),
+                                    content_type = 'application/json')                
+        self.assertEqual(response.status_code, 200)
+
     def test_delete_entry_empty(self):
         """ Tests delete_entry when entries list is empty. """
         response = self.client.delete('/api/v1/entries/4')
         self.assertEqual(response.status_code, 200)
-
         
     def test_delete_entry(self):
         """  Tests for delete_entry success. """
