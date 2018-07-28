@@ -7,19 +7,17 @@ entries = []
 
 @app.route("/api/v1/entries", methods=["GET"])
 def get_all_entries():
-    #check if entries list is empty
+    """ Retrieve all entries from the list of entries"""
     if entries == []:
         return jsonify("There are no entries yet"),200
-    #get all entries in a list
     else:
         return jsonify(entries),200
 
 @app.route("/api/v1/entries/<string:entryId>", methods=["GET"])
 def get_single_entry(entryId):
-    #check if entries list is empty
+    """ Retrieves specified entry from the list of entries"""
     if entries == []:
         return jsonify("There are no entries yet"),200
-    #get a single entry from the entries list
     else:
         for x in entries:
             if x["id"] == entryId:
@@ -27,35 +25,44 @@ def get_single_entry(entryId):
 
 @app.route('/api/v1/entries', methods=['POST'])
 def add_entry():
-    #get input/ new entry from user 
+    """ Adds an entry to to the list of entries"""
     entry = request.get_json()
     entry_keys = ["title","content","date","id"]
     for key in entry:
-        #check whether the inputed data is valid
+        # Checks whether the inputed data is valid
         if key not in entry_keys:
             return jsonify("Please enter valid data"),200
-        #check whether the id inputed already exists
+        # Checks whether the id inputed already exists
         elif entry in entries:
             if entry["id"] == entry[key]:
                 return jsonify("That id is already taken"),200
-        #check whether any field has no content
+        # Checks whether any field has no content
         elif entry[key] == "":
             return jsonify("One of the fields is empty"),200
-    #add the inputed entry to the entries list
+    # Adds the inputed entry to the entries list
     entries.append(entry)
     return jsonify({'Entries': entries}),201
 
 @app.route('/api/v1/entries/<int:entryId>', methods=["PUT"])
-
 def edit_entry(entryId):
-    #check if entries list is empty
+    """ Edits a specified entry"""
     if entries == []:
         return jsonify("There are no entries in your diary"),200
-    #modify the requested entry
     else:
         for x in entries:
             if x["id"] == entryId:
                 edited_entry = request.get_json()
                 x["content"] = edited_entry["content"]
                 x["title"] = edited_entry["title"]
+        return jsonify ({"Your edited entry": x}),200
+
+@app.route("/api/v1/entries/<int:entryId>", methods=["DELETE"])
+def delete_entry(entryId):
+    """ Deletes an entry from a list of entries"""
+    if entries == []:
+        return jsonify("There are no entries in your diary"),200
+    else:
+        for x in entries:
+            if x["id"] == entryId:
+                entries.remove(x)
         return jsonify ({"Your edited entry": x}),200
