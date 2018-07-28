@@ -5,9 +5,6 @@ import json
 import unittest
 
 
-
-#Dummy data
-
 dummy = {'title':'work',
         'content':'went to work yesterday',
         'id':'4',
