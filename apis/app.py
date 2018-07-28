@@ -21,7 +21,8 @@ def get_single_entry(entryId):
     else:
         for x in entries:
             if x["id"] == entryId:
-                return jsonify(x),200
+                return x
+            return jsonify(x),200
 
 @app.route('/api/v1/entries', methods=['POST'])
 def add_entry():
@@ -54,7 +55,7 @@ def edit_entry(entryId):
                 edited_entry = request.get_json()
                 x["content"] = edited_entry["content"]
                 x["title"] = edited_entry["title"]
-                return jsonify ({"Your edited entry": x}),200
+        return jsonify ({"Your edited entry": x}),200
 
 @app.route("/api/v1/entries/<int:entryId>", methods=["DELETE"])
 def delete_entry(entryId):
@@ -65,4 +66,4 @@ def delete_entry(entryId):
         for x in entries:
             if x["id"] == entryId:
                 entries.remove(x)
-                return jsonify ({"Your deleted entry": x}),200
+        return jsonify ({"Your deleted entry": x}),200
