@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/PrincesaTyne/my-diary.svg?branch=api)](https://travis-ci.org/PrincesaTyne/my-diary)
-[![Coverage Status](https://coveralls.io/repos/github/PrincesaTyne/my-diary/badge.svg?branch=api)](https://coveralls.io/github/PrincesaTyne/my-diary?branch=api)
 [![Maintainability](https://api.codeclimate.com/v1/badges/49e1db25917a4fdd37b1/maintainability)](https://codeclimate.com/github/PrincesaTyne/my-diary/maintainability)
+[![Coverage Status](https://coveralls.io/repos/github/PrincesaTyne/my-diary/badge.svg?branch=api)](https://coveralls.io/github/PrincesaTyne/my-diary?branch=api)
 
 ## my-diary
 
