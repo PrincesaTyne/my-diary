@@ -65,5 +65,5 @@ def delete_entry(entryId):
     else:
         for x in entries:
             if x["id"] == entryId:
-                a = x.pop("id")
-        return jsonify ({"Your deleted entry": a}),200
+                entries.remove(x)
+        return jsonify ({"Your deleted entry": x}),200
