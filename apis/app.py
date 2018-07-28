@@ -65,4 +65,4 @@ def delete_entry(entryId):
         for x in entries:
             if x["id"] == entryId:
                 entries.remove(x)
-        return jsonify ({"Your edited entry": x}),200
+        return jsonify ({"Your deleted entry": x}),200
