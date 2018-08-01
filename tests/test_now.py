@@ -43,7 +43,6 @@ class TestEntries(unittest.TestCase):
     def test_get_empty_entry(self):
         """ Tests get_all_eentries when entries list is empty. """        
         response = self.client.get('/api/v1/entries')
-        print (response)
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"There are no entries yet", response.data)
     
