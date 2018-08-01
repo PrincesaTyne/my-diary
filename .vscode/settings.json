@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "/home/princesa/.local/share/virtualenvs/apis-ECZ3zsaG/bin/python",
+    "python.linting.enabled": true,
+    "python.unitTest.pyTestArgs": [
+        "."
+    ],
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.pyTestEnabled": true
+}

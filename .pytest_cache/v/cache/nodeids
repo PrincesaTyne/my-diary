@@ -1,0 +1,14 @@
+[
+  "tests/test_now.py::TestEntries::test_add_entry_id_exists",
+  "tests/test_now.py::TestEntries::test_add_entry_null_entry",
+  "tests/test_now.py::TestEntries::test_add_entry_success",
+  "tests/test_now.py::TestEntries::test_add_entry_valid_inputs",
+  "tests/test_now.py::TestEntries::test_delete_entry",
+  "tests/test_now.py::TestEntries::test_delete_entry_empty",
+  "tests/test_now.py::TestEntries::test_edit_empty_entry",
+  "tests/test_now.py::TestEntries::test_edit_entry",
+  "tests/test_now.py::TestEntries::test_get_all_entries",
+  "tests/test_now.py::TestEntries::test_get_empty_entry",
+  "tests/test_now.py::TestEntries::test_get_single_empty_entry",
+  "tests/test_now.py::TestEntries::test_get_single_entry"
+]
